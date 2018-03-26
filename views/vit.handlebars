@@ -1,0 +1,17 @@
+<h1>My Users</h1>
+
+{{#if vit}}
+
+    <p>Список пользователей:</p>
+  <ol> 
+         {{#each vit}} 
+             <li> 
+                {{this}} 
+             </li> 
+         {{/each}} 
+  </ol>
+{{else}}
+    <p>Список пользователей пуст</p>
+{{/if}}
+
+ <a href="http://localhost:3000/">Come back star page</a>

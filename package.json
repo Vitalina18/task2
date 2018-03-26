@@ -1,0 +1,27 @@
+{
+  "name": "vv",
+  "version": "1.9.9",
+  "description": "das",
+  "main": "server.js",
+  "scripts": {
+    "test": "s",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vitalina18/task.git"
+  },
+  "keywords": [
+    "vitalina"
+  ],
+  "author": "vitalina",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/Vitalina18/task/issues"
+  },
+  "homepage": "https://github.com/Vitalina18/task#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
+  }
+}
