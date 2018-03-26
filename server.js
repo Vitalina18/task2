@@ -2,7 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 //var mas = require('./lib/mas.js');
 const app = express();
-const handlebars = require('express3-handlebars').create({ defaultLayout:'main' });
+const handlebars = require('express-handlebars').create({ defaultLayout:'main' });
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
 //application/x-www-form-urlencoded
