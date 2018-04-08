@@ -1,16 +1,21 @@
 <h1>My Users</h1>
 
 {{#if Vit}}
-    <p>Список пользователей:</p>
-  <ol> 
-         {{#each Vit}} 
-             <li> 
-                {{this.name}} 
-             </li> 
-         {{/each}} 
-  </ol>
+<p>Список пользователей:</p>
+<form action="/del" method="post">
+    <ol>
+        {{#each Vit}}
+        <li>
+            <input type="checkbox" name="name" value="{{this.name}}"> {{this.name}} {{this.Lname}} {{this.mail}}
+
+
+        </li>
+        {{/each}}
+    </ol>
+    <input type="submit" value="Delete people">
+</form>
 {{else}}
-    <p>Список пользователей пуст</p>
+<p>Список пользователей пуст</p>
 {{/if}}
 
- <a href="/">Come back star page</a>
+<a href="/">Come back star page</a>
