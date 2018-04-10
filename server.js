@@ -69,14 +69,14 @@ app.post("/vvv", urlencodedParser, function(request, response) {
   console.log(name);
   let Lname = request.body.Lname;
   console.log(Lname);
-  let born = request.body.born;
-  console.log(born);
-  let tel = request.body.tel;
-  console.log(tel);
+  let Born = request.body.Born;
+  console.log(Born);
+  let Telephone = request.body.Telephone;
+  console.log(Telephone);
   let mail = request.body.mail;
   console.log(mail);
-  let dolg = request.body.dolg;
-  console.log(dolg);
+  let Positions = request.body.Positions;
+  console.log(Positions);
 
   Vit.find(
     {
@@ -93,10 +93,10 @@ app.post("/vvv", urlencodedParser, function(request, response) {
         newVit = new Vit({
           name: name,
           Lname: Lname,
-          born: born,
-          tel: tel,
+          Born: Born,
+          Telephone: Telephone,
           mail: mail,
-          dolg: dolg
+          Positions: Positions
         });
         newVit.save(function(err) {
           if (err) return console.error(err);
